@@ -1,0 +1,83 @@
+
+.my-projects-title{
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+}
+.my-projects-wrapper{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.project-item .project-photo img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-item .project-info .project-title{
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+
+.project-item .project-info .project-desc{
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.project-item .project-info .project-btn{
+    color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    transition: opacity .5s ease;
+}
+
+.project-item .project-info .project-btn:hover{
+    opacity: .7;
+}
+
+
+
+@media (max-width:1080px){
+    .container{
+        max-width: 830px;
+    }
+
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 616px){
+    .container{
+        width: 400px;
+    }
+    
+}
+
+

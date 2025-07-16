@@ -1,0 +1,319 @@
+.contact-me{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    row-gap: 40px;
+}
+
+.contact-title{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact-wrapper{
+    display: flex;
+     flex-direction : column ;
+    row-gap: 10px;
+}
+.contact-wrapper-title{
+    font-weight: bold;
+    color: white;
+}
+.contact-wrapper p{
+    color: rgb(252, 214, 214);
+    font-size: 30px;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-links-phone{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.contact-links-phone i{
+    background-color: rgb(177, 177, 235);
+    width: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.contact-links-phone .phone{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.contact-links-phone .phone a{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.contact-links-mail {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.contact-links-mail i{
+    
+    background-color: lightgreen;
+    width: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+.contact-links-mail .email{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.contact-links-mail .email a{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.contact-links-location {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    
+}
+
+.contact-links-location i{
+    background-color: lightpink;
+    width: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.contact-links-location .location{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.contact-links-location .location .nicosia{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.social-links span{
+    color: rgba(255, 255, 255, 0.801);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.social-links .social-links-wrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+} 
+
+.social-links .social-links-wrapper i{
+    font-size: 50px;
+    color: rgba(202, 224, 231, 0.74);
+    transition: all 0.4s;
+}
+
+.social-links .social-links-wrapper i:hover{
+    color: black;
+}
+
+.send-me{
+    margin-top: -20px;
+    background-color: rgba(255, 210, 210, 0.26);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.send-me-wrapper{
+display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.send-me-wrapper .send-me-title{
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+.send-me-wrapper form .name{
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+padding-bottom: 10px;
+}
+
+.send-me-wrapper form .name span{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.send-me-wrapper form .name input{
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 1PX solid black;
+    background-color: white;
+}
+.send-me-wrapper form .name input::placeholder{
+    padding-left: 2px;
+    font-size: 20px;
+    color: black;
+}
+.send-me-wrapper form .mail{
+    display: flex;
+flex-direction: column;
+row-gap: 10px;
+padding-bottom: 10px;
+}
+
+.send-me-wrapper form .mail span{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.send-me-wrapper form .mail input{
+    background-color: white;
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.send-me-wrapper form .mail input::placeholder{
+     padding-left: 2px;
+    font-size: 20px;
+    color: black;
+}
+
+ .send-me-wrapper form .message{
+       display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   padding-bottom: 30px;
+ }
+
+  .send-me-wrapper form .message span{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+   .send-me-wrapper form .message textarea{
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: white;
+    border:1px solid black;
+    
+   }
+
+   .send-me-wrapper form .message textarea::placeholder{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+   }
+
+   .send-me-wrapper form .send-message {
+    text-align: center;
+    padding-bottom: 20px;
+   }
+
+   .send-me-wrapper form .send-message a{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: opacity 0.4s;
+   }
+
+   .send-me-wrapper form .send-message a:hover{
+    opacity: 0.7;
+   }
+
+
+   @media (max-width:1080px){
+    .container{
+        max-width: 830px;
+    }
+
+    .contact-wrapper p{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:800px){
+    .container{
+        max-width: 600px;
+    }
+
+
+    .contact-wrapper p{
+        font-size: 20px;
+    }
+    .contact-title{
+        font-size: 40px;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-wrapper{
+        width: 300px;
+    }
+
+    .send-me{
+        width: 300px;
+    }
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Roboto";
+}
+body{
+    background-color: #B79883;
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.header .logo{
+    font-size: 30px;
+}
+.header .logo a{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 40px;
+}
+.navbar a{
+    color: white;
+    transition: border-bottom 2s ;
+}
+
+.navbar a.active{
+    border-bottom: 1px solid white;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.header #open-sidebar{
+    position: absolute;
+    right: 5px;
+    font-size: 2px;
+    color: white;
+    visibility: hidden;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+
+.nav-sidebar{
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #D1CFC9;
+    width: 170px;
+    text-align: center;
+    row-gap: 40px;
+    min-height: 40vh;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.nav-sidebar a{
+    color: black; 
+}
+
+.nav-sidebar .home{
+    padding-top: 35px;
+}
+
+.nav-sidebar i{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.first-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-top: 15%;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.first-page .profile-photo img{
+     width: 150px;
+    border-radius: 100%;
+}
+
+.first-page .intro{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.first-page .job{
+    font-size: 40px;
+    color: #D1CFC9;
+    font-weight: bold;
+}
+
+.first-page .short-paragraph{
+    font-size: 25px;
+    color: white;
+}
+
+.first-page .buttons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 12px;
+
+}
+
+.first-page .buttons a {
+     color: white;
+    background-color: rgb(189, 168, 248);
+    border-radius: 30px;
+    transition: 0.4s ease all;
+}
+
+.first-page .buttons .contact-me{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+.first-page .buttons .contact-me::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.first-page .buttons .contact-me:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.first-page .buttons .contact-me:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+
+.first-page .buttons .about-me{
+    padding: 15px;
+      z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.first-page .buttons .about-me:hover{
+   cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+
+
+.first-page .social-links{
+
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.first-page .social-links a i{
+    font-size: 50px;
+    color: rgba(202, 224, 231, 0.74);
+    transition: 0.4s color;
+}
+
+.first-page .social-links a i:hover{
+    
+    color: black;
+}
+
+@media (max-width:1250px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media (max-width:1080px){
+    .container{
+        max-width: 830px;
+    }
+    
+}
+
+@media (max-width:910px){
+    .container{
+        max-width: 600px;
+    }
+    .navbar a{
+        visibility: hidden;
+    }
+    .header #open-sidebar{
+        visibility: visible;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px){
+ .container{
+        max-width: 600px;
+    }
+}
+
+@media (max-width:600px){
+ .container{
+        max-width: 400px;
+    }
+
+    .header .logo a{
+        font-size: 20px;
+    }
+
+    .first-page .intro{
+        font-size: 30px;
+    }
+    .first-page .job{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:400px){
+ .container{
+        max-width: 300px;
+    }
+
+    
+    
+    .first-page .profile-photo img{
+        width: 90px;
+    }
+
+    .first-page .intro{
+        font-size: 22px;
+    }
+
+    .first-page .job{
+        font-size: 18px;
+    }
+    .first-page .short-paragraph{
+        font-size: 15px;
+    }
+
+    .first-page .buttons{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
